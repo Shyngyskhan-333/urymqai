@@ -1,0 +1,376 @@
+
+  html{
+      animation: slideIn 0.5s linear;
+    scroll-behavior: smooth;
+  }
+  p{
+    color:rgb(206, 206, 206);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  h1{
+    background-color: black;
+    width:100%;
+    top:0;
+    display:block;
+  left:0;
+    height:min-content;
+    margin: 0;
+    transition:0.2s;
+    padding:2%;
+  }
+  h1:hover{
+    padding: 3%;
+  }
+  .mainbutton{
+    color:white;
+    font-size: 1vw;
+    font-weight: 1000;
+    position:absolute;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: inline-block;
+    background-color:none; 
+    text-decoration: none;
+    border-radius: 10px;    
+    cursor: pointer;       
+    margin:1vw;
+    transition: 0.2s;
+  }
+  .accy {
+    color: gold;          
+  }
+  .mainbutton:hover {
+    padding: 0.25vw;
+    opacity: 70%;
+    transition:0.2s
+  }
+  .mainbutton:active{
+    opacity: 40%
+  }
+  .acc {
+    color: white;    
+  }
+  #logo{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left:5vw;
+    top:10vw;
+    display:block;  
+    font-size:5vw;
+    color:white;
+    font-weight: 1000;
+    letter-spacing: 2vw;
+    position:absolute;
+    transition: 0.2s;
+  }
+  #logo:hover{
+    text-shadow: 0 0 1.5vw rgba(245, 222, 179, 0.5);
+  }
+  #epbutton{
+    left:11.25vw;
+    top:22.5vw;
+  }
+  #bonusbutton{
+    top:22.5vw;
+    left: 18vw
+  }
+  #gallerybutton{
+    top:22.5vw;
+    left:25.5vw
+  }
+  #musicbutton{
+    top:22.5vw;
+    left:33.375vw
+  }
+  #descbutton{
+    top:22.5vw;
+    left:4.5vw
+  }
+  .yasin{
+    justify-content: center;
+    display: flex;
+  }
+  .title{ 
+    text-decoration: none;
+    margin: 0%;
+    font-size:2.5vw; 
+      color:rgb(18, 19, 36);
+      font-weight: 100;
+      text-align: center;
+      padding: 2.5vw;
+  }
+  .mainmenu{
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+  .episodes{
+    justify-content: center;
+    display:none;
+    height:fit-content;
+    width:100%
+  }
+  .episodes:target{
+    display:flex
+  }
+  .epbutton{
+    margin-bottom: 5vw;
+    display: flex;
+    padding-top:2.5vw;
+    padding-bottom: 2.5vw;
+    background-image:url(https://i.ibb.co.com/70W87VN/left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 2.125vw;
+    padding-right: 2.125vw;
+    text-align: center;
+  }
+  .epbutton:hover{
+    opacity: 0.7;
+  }
+  .epbutton:active{
+    opacity: 0.5;
+  }
+  .previous{
+    margin-left: 4.5vw;
+    margin-right: 2vw;
+  }
+  .next{
+    margin-right: 4.5vw;
+    margin-left: 2vw;
+    display: flex;
+    rotate: 180deg;
+  }
+  .title a{
+    background-color:rgba(255, 255, 255, 0.023);text-decoration: none; color:white; border: 0.1vw solid  white; border-radius: 2vw; padding-bottom: 1vw;padding-top: 1vw; padding-left: 15vw; padding-right: 15vw; text-align: center;text-shadow: 0 0 0.5vw rgba(0,0,0,0.3);
+    transition: 0.2s;
+  }
+  .title a:hover{
+    font-size: 2.25vw;
+    padding-left: 16vw;
+    padding-right: 16vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-shadow: 0 0 0.5vw rgba(0,0,0,0.2);
+    opacity: 0.8;
+  }
+  .title a:active{
+    opacity: 0.5;
+  }
+  section{
+    background-color: black;
+    background-image: linear-gradient(90deg, rgba(83, 83, 83, 0.375), rgba(0, 0, 0), rgba(82, 82, 82, 0.375));
+  }
+  .cardep{
+    margin-bottom: 5vw;
+    margin-left:1vw;
+    margin-right:1vw;
+    width:17.5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    aspect-ratio: 16/9;
+    border-radius: 0.5vw; 
+    background-position: center;
+    transition: 0.2s;
+    opacity:75%
+  }
+  .cardep1{
+    background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/j19N12H/1ep.png);
+  }
+  .cardep2{
+    background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/fT378SX/2ep.png);
+  }
+  .cardep3{
+    background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/gM7Mp0YK/3ep.png);
+  }
+  .cardep4{
+    background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/W4f2vS4j/4ep.png);
+  }
+  .cardep5{
+    background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/TMCq9mYQ/5ep.png);
+  }
+  .cardep6{
+    background-color: black;
+    background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/JjFNY4sF/placeholder.png);
+  }
+  .cardep7{
+    background-color: black;
+    background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/JjFNY4sF/placeholder.png);
+  }
+  .cardep8{
+    background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/6cyx3smH/8ep.jpg);
+  }
+  .cardep:hover{
+    opacity:100%
+  }
+  .cardeptext{
+    font-size:1.25vw;
+    text-decoration: none;
+    bottom: -5vw;
+    left:1.5vw;
+    position:relative;
+    transition:0.2s
+  }
+  body {
+    margin:0;
+    padding:0;
+    background-image: linear-gradient(black, rgba(0,0,0,0.9), black), url(gif.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-color: black;
+  }
+.container{
+  padding:2vw;
+  animation: slideIn 1s linear;
+}
+  .slider-wrapper{
+    position: relative;
+    max-width: 30vw;
+    margin: 0 auto;
+  }
+  .slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x:hidden;
+    scroll-snap-type: x mandatory ;
+    scroll-behavior: smooth;
+    border-radius: 2vw;
+  }
+  .slider img{
+    flex: 2 0 75%;
+    scroll-snap-align: start;
+    object-fit:contain;
+    transition:flex 0.2s;
+    margin:0;
+  }
+  .slider-nav{
+    display:flex;
+    column-gap:2vw;
+    position: absolute;
+    left:3.5%;
+    bottom: 1.25vw;
+    transform: translateX(-0.5);
+    z-index: 1;
+  }
+    .slider-nav a{
+      width:4vw;
+      height: 4vw;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 0.25;
+      transition: 0.25s;
+    }
+    .slider-nav a:hover{
+      opacity: 1;
+      background-color: wheat;
+    }
+
+.pin-container {
+    display:block;
+    background-color: none;
+    padding: 2vw;
+    text-align: center;
+    animation: slideIn 0.2s linear;
+}
+.input-group input {
+  color:rgba(255, 255, 255, 0.7);
+  background-color: transparent;
+    width: 4vw;
+    height: 5vw;
+    margin: 0 1vw;
+    text-align: center;
+    font-size: 3vw;
+    border: 0.2vw solid darkgrey;
+    border-radius: 25%;
+    transition:0.2s
+}
+.input-group input:hover{
+  width:4.5vw;
+  height:5.5vw
+}
+.input-group input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+.submit {
+    font-family: "Special Elite", syste,-ui;
+    margin-top: 2vh;
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    cursor: pointer;
+    transition:0.2s;
+    background-color: transparent;
+    color:rgb(206, 206, 206);
+    border-right:transparent;
+    border-left:transparent;
+    border-bottom:grey; border-top:grey ;
+    border-style: solid;
+}
+.submit:hover{
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+h2{   font-family: "Special Elite", syste,-ui;
+color:wheat; font-size: 3vw; transition:0.2s;}
+#access-link.success {
+  text-decoration: none;
+  background-image: url(https://i.ibb.co.com/JWK5fLkq/folder.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 5vw;
+  transition: 0.2s;
+  animation: slideIn 1s linear;
+}
+#access-link.success:hover{
+  padding:6vw;
+}
+#pin-container.success{
+  display: none;
+}
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(2vw); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 3. The lists */
+.image-list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex-shrink: 0; 
+}
+
+
+.image-list li {
+  margin: 0;
+  padding: 0;
+}
+
+.image-list img {
+  width:100%;
+  display: block;
+  aspect-ratio: 16/9;  
+}
+
+/* 5. The Loop Animation */
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.scroll-container:hover .image-wrapper {
+  animation-play-state: paused;
+  opacity:100%
+}
+
+
+

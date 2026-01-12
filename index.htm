@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/fonts.googleapis.com">
+  <link rel="stylesheet" href="urymqai.css">
+  <link rel="icon" href="https://i.ibb.co.com/5XtqYNWC/icon.jpg" type="image/vnd.microsoft.icon">
+  <title>Ұрымқай · Urymqai</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <ul class="image-list">
+      <div class="mainmenu">
+        <p id="logo">URYMQAI</p>
+        <div class="buttons">
+        <a href="#description" id="descbutton" class="mainbutton">ИНФО</a>
+        <a href="#eps" id="epbutton" class="mainbutton">СЕРИИ</a>
+        <a href="#bonus" id="bonusbutton" class="mainbutton">БОНУСЫ</a>
+        <a href="#gallery" id="gallerybutton" class="mainbutton">ГАЛЕРЕЯ</a>
+        <a href="#music" id="musicbutton" class="mainbutton">САУНДТРЕКИ</a>
+        </div>
+      </div>
+    </ul>
+    
+    <section id="description">
+      <p class="info title" style="border-top: 0.2vw solid rgba(245, 222, 179, 0.221);"><a href="#description">О СЕРИАЛЕ</a></p>
+      <div class="info yasin">
+        <p>this is a text about the show</p>
+      </div>
+    </section>
+    <section id="eps">
+      <p class="eps title" style="border-top: 0.2vw solid rgba(245, 222, 179, 0.221);"><a href="#eps1">СЕРИИ</a></p>
+      <div class="eps yasin">
+      <a href="#eps1" class="previous epbutton"></a>
+    <div id="eps1"class="episodes">
+      <a class="cardep1 cardep" href="ep1.htm">
+      <div class="cardeptext"><p>S1:EP1</p></div>
+      </a>
+      <a class="cardep2 cardep" href="ep2.htm">
+      <div class="cardeptext"><p>S1:EP2</p></div>
+      </a>
+      <a class="cardep3 cardep" href="ep3.htm">
+      <div class="cardeptext"><p>S1:EP3</p></div>
+      </a>
+      <a class="cardep4 cardep" href="ep4.htm">
+      <div class="cardeptext"><p>S1:EP4</p></div>
+      </a>
+    </div>
+    <div id="eps2" class="episodes">
+      <a class="cardep5 cardep" href="ep5.htm">
+      <div class="cardeptext"><p>S1:EP5</p></div>
+      </a>
+      <a class="cardep6 cardep" href="ep6.htm">
+      <div class="cardeptext"><p>S1:EP6</p></div>
+      </a>
+      <a class="cardep7 cardep" href="ep7.htm">
+      <div class="cardeptext"><p>S1:EP7</p></div>
+      </a>
+      <a class="cardep8 cardep" href="ep8.htm">
+      <div class="cardeptext"><p>S1:EP8</p></div>
+      </a>
+    </div>
+    <a href="#eps2" class="next epbutton"></a> 
+    </div>
+  </section>
+
+  <section id="bonus">
+    <p class="bonus title" style="border-top: 0.2vw solid rgba(245, 222, 179, 0.221);"><a href="#bonus">БОНУСЫ</a></p>
+    <div class="bonus yasin">
+    <a class="success" id="access-link" href="https://youtu.be/UxpmsbUJLl4" target="_blank" style="display: none;"></a>
+<div class="pin-container" id="pin-container">
+        <div class="input-group" id="input-group">
+            <input type="text" id="pin1" maxlength="1" inputmode="numeric" autocomplete="off">
+            <input type="text" id="pin2" maxlength="1" inputmode="numeric" autocomplete="off">
+            <input type="text" id="pin3" maxlength="1" inputmode="numeric" autocomplete="off">
+        </div>
+        <button class="submit" onclick="checkPin()">ПОДТВЕРДИТЬ</button>
+        <p id="message"></p>
+    </div>
+    <section id="slide" class="container" style="display: none;">
+    <div class="slider-wrapper">
+      <div class="slider">
+        <img id="slide-1" src="https://i.ibb.co.com/7t1gTpBh/james1.jpg">
+        <img id="slide-2" src="https://i.ibb.co.com/ZzRF05Kp/james2.jpg">
+        <img id="slide-3" src="https://i.ibb.co.com/gLgt2j11/james3.jpg">
+        <img id="slide-4" src="https://i.ibb.co.com/HfnVbDXq/james4.jpg">
+        <img id="slide-5" src="https://i.ibb.co.com/0RKmzCBW/james5.jpg">
+      </div>
+      <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+        <a href="#slide-5"></a>
+      </div>
+    </div>
+  </section>
+    </div>
+  </section>
+  
+  <section id="gallery">
+    <p class="gallery title" style="border-top: 0.2vw solid rgba(245, 222, 179, 0.221);"><a href="#gallery">ГАЛЕРЕЯ</a></p>
+    <div class="gallery yasin">
+      <div>
+      <img src="placeholder.png" onclick="makeFullscreen(this)">
+      <img src="placeholder.png" onclick="makeFullscreen(this)">
+      <img src="placeholder.png" onclick="makeFullscreen(this)">
+      <img src="placeholder.png" onclick="makeFullscreen(this)">
+    </div> 
+    </div>
+    </div>
+  </section>
+    
+    <script src="script.js"></script>
+  
+  
+  
+  
+  
+</body>
+</html>
