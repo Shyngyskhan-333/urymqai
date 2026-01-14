@@ -152,7 +152,6 @@
       padding: clamp(1.5rem, 2.5vw, 2.5rem);
   }
   .overlay{
-    margin-left:clamp(1rem, 2vw, 3rem);
     display: flex;
     flex-direction: column;
     gap:clamp(1rem, 2vw, 2rem);
@@ -175,6 +174,9 @@
   @media  screen and (min-width:768px) {
     .buttonbox{
       flex-direction: row;
+    }
+    .overlay{
+      margin-left:clamp(1rem, 2vw, 3rem);
     }
   }
   .buttonmain{
@@ -475,3 +477,4 @@ color:wheat; font-size: 3vw; transition:0.2s;}
   animation-play-state: paused;
   opacity:100%
 }
+
