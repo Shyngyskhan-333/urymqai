@@ -31,7 +31,15 @@
     padding:clamp(0.25rem, 0.5vw, 0.75rem);
     border-radius: 5px;
   }
-  .nav{top:0;
+  .episodemenu{
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width:85%;
+    gap:1vw;
+  }
+  .mainnav{top:0;
   z-index: 1000;
     background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5), rgba(0,0,0,0.3));
     height:min-content;
@@ -46,7 +54,7 @@
     padding-top: clamp(1rem, 1.5vw, 2.5rem);
     backdrop-filter: blur(3px);
   }
-  .nav:hover{
+  .mainnav:hover{
     padding-bottom: clamp(1.5rem, 2vw, 3rem);
     padding-top: clamp(1.5rem, 2vw, 3rem);
     
@@ -141,8 +149,11 @@
     margin-left:clamp(1rem, 2vw, 3rem);
   }
   .yasin{
+    justify-self: center;
     justify-content: center;
+    align-items: center;
     display: flex;
+    width:80%
   }
   .title{ 
     text-decoration: none;
@@ -210,16 +221,23 @@
     color:white;
   }
   .episodes{
-    justify-content: center;
-    display:none;
-    height:fit-content;
-    width:100%
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin-bottom:2vw;
+    gap:1vw;
   }
-  .episodes:target{
-    display:flex
+  #eps1, #eps2{
+    scroll-behavior: smooth;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    gap:1vw;
   }
   .epbutton{
-    margin-bottom: 5vw;
     display: flex;
     padding-top:2.5vw;
     padding-bottom: 2.5vw;
@@ -237,14 +255,8 @@
   .epbutton:active{
     opacity: 0.5;
   }
-  .previous{
-    margin-left: 4.5vw;
-    margin-right: 2vw;
-  }
+  
   .next{
-    margin-right: 4.5vw;
-    margin-left: 2vw;
-    display: flex;
     rotate: 180deg;
   }
   .title a{
@@ -267,9 +279,6 @@
     background-image: linear-gradient(90deg, rgba(83, 83, 83, 0.375), rgba(0, 0, 0), rgba(82, 82, 82, 0.375));
   }
   .cardep{
-    margin-bottom: 5vw;
-    margin-left:1vw;
-    margin-right:1vw;
     width:17.5vw;
     background-repeat: no-repeat;
     background-size: cover;
@@ -280,7 +289,7 @@
     border-radius: 0.5vw; 
     background-position: center;
     transition: 0.2s;
-    opacity:75%
+    opacity:75%;
   }
   .cardep1{
     background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/j19N12H/1ep.png);
@@ -443,39 +452,4 @@ color:wheat; font-size: 3vw; transition:0.2s;}
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* 3. The lists */
-.image-list {
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  flex-shrink: 0; 
-}
 
-
-.image-list li {
-  margin: 0;
-  padding: 0;
-}
-
-.image-list img {
-  width:100%;
-  display: block;
-  aspect-ratio: 16/9;  
-}
-
-/* 5. The Loop Animation */
-@keyframes scroll-carousel {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-
-.scroll-container:hover .image-wrapper {
-  animation-play-state: paused;
-  opacity:100%
-}
