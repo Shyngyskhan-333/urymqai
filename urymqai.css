@@ -4,6 +4,7 @@
     scroll-behavior: smooth;
   }
   p{
+    margin:0;
     color:rgb(206, 206, 206);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
@@ -18,9 +19,23 @@
     border: 1px solid rgba(128, 128, 128, 0.5);
     border-radius: 10px;
     transition:0.2s;
+    padding-top:clamp(0.5rem, 1vw, 1rem);
+    padding-bottom:clamp(0.5rem, 1vw, 1rem);
   }
   .infobox:hover{
         backdrop-filter: blur(3px);
+  }
+  #eps{
+    padding-top:5vw;
+    padding-right:2vw;
+    padding-left:2vw;
+    display:flex;
+    gap:2vw;
+    flex-direction: column;
+  }
+  #eps h1{
+    display:block;
+    text-align:center;
   }
   .infobox p{font-size:clamp(0.75rem, 1.5vw, 1.5rem)}
   .agerestriction{
@@ -36,7 +51,6 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    width:85%;
     gap:1vw;
   }
   .mainnav{top:0;
@@ -50,13 +64,13 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom:clamp(1rem, 1.5vw, 2.5rem);
-    padding-top: clamp(1rem, 1.5vw, 2.5rem);
+    padding-bottom:clamp(0.5rem, 1vw, 2rem);
+    padding-top: clamp(0.5rem, 1vw, 2rem);
     backdrop-filter: blur(3px);
   }
   .mainnav:hover{
-    padding-bottom: clamp(1.5rem, 2vw, 3rem);
-    padding-top: clamp(1.5rem, 2vw, 3rem);
+    padding-bottom: clamp(1rem, 1.5vw, 2.5rem);
+    padding-top: clamp(1rem, 1.5vw, 2.5rem);
     
   }
   .titlebox{
@@ -148,13 +162,7 @@
     letter-spacing: 1vw;
     margin-left:clamp(1rem, 2vw, 3rem);
   }
-  .yasin{
-    justify-self: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width:80%
-  }
+  
   .title{ 
     text-decoration: none;
     margin: 0%;
@@ -191,6 +199,84 @@
     .overlay{
       margin-left:clamp(1rem, 2vw, 3rem);
     }
+  }
+ 
+  h1{
+    margin:0;
+    font-size:2.5vw;
+      color:white;
+      font-weight: 700;
+      text-align: left;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .creatorbox{
+    width:100%;
+    display:flex;
+    gap:4vw;
+    align-items: center;
+    border-top:2px solid rgba(255, 255, 255, 0.25);
+    padding-top: 1vw;
+  }
+  .infoname{
+    font-size:4vw;
+    color:rgb(220, 220, 220);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5vw;
+  }
+  .info{
+    gap:1vw;
+    display:flex;
+    justify-content: left;
+    justify-self: left;
+    flex-direction: column;
+    font-size:1vw;
+    color:rgb(220, 220, 220);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+  }
+  #bonus h1{
+    text-align: center;
+  }
+  #bonus{
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-self: left;
+    width:40%;
+    flex-direction: column;
+    gap:1vw;
+  }
+  h3{
+    width:50%;
+    border-top:2px solid rgba(255, 255, 255, 0.25);
+    color:transparent;
+
+  }
+  .desctext{
+    font-size:1vw;
+    color:rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+  }
+  .section2{
+    padding:2vw;
+    display:flex;
+    gap: 2vw;
+    flex-direction: row-reverse;
+  }
+  #description h1{
+    display:flex;
+    justify-self:left;
+    width:100%;
+  }
+  #description{
+    gap:2vw;
+    flex-direction: column;
+    display:flex;
+    justify-content: left;
+    justify-self: right;
+    align-items: center;
+    width:60%;
   }
   .buttonmain{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -276,7 +362,7 @@
   }
   section{
     background-color: black;
-    background-image: linear-gradient(90deg, rgba(83, 83, 83, 0.375), rgba(0, 0, 0), rgba(82, 82, 82, 0.375));
+    background-image: linear-gradient(90deg, rgba(41, 41, 41, 0.375), rgba(0, 0, 0), rgba(41, 41, 41  , 0.375));
   }
   .cardep{
     width:17.5vw;
@@ -385,9 +471,13 @@
     }
 
 .pin-container {
-    display:block;
+  
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
     background-color: none;
-    padding: 2vw;
     text-align: center;
     animation: slideIn 0.2s linear;
 }
