@@ -17,7 +17,7 @@
   <div class="mainnav">
   <p id="logo">URYMQAI</p>
   <div class="buttons">
-        <a href="#eps"  class="mainbutton">СЕРИИ</a>
+        <a href="#eps"  class="mainbutton">ЭПИЗОДЫ</a>
         <a href="#bonus"  class="mainbutton">БОНУСЫ</a>
       <a href="#gallery"  class="mainbutton">ГАЛЕРЕЯ</a>
       </div> 
@@ -43,15 +43,37 @@
         </div>
       </div>
       </div>
-    <section id="description">
-      <p class="info title" style="border-top: 0.2vw solid rgba(245, 222, 179, 0.221);"><a href="#description">О СЕРИАЛЕ</a></p>
-      <div class="info yasin">
-        <p>this is a text about the show</p>
+
+    <section class="section2">
+
+    <div id="description">
+      <h1>О чем Ұрымқай?</h1>
+      <div><p class="desctext">Сериал «Ұрымқай» - приключение нестандартного вида, совмещающее идеи свободы и единства и уникальный, порой комично предсказуемый ход событий. В государстве Ұрымқай положено ежегодно праздновать национальный праздник Ұрымқай в виде фестиваля длиной в неделю. Важный аспект - подготовка грандиозного торта, на поиски ингредиентов для готовки которого Қолтықшаш отправляется в путешествие, в ходе которого он познает важность верности и свободы.</p></div>
+        <div class="creatorbox">
+      <div class="info">
+        <p>Режиссер:</p>
+        <p>Сценарист:</p>
       </div>
+        <p class="infoname">Шина</p>
+        </div>
+    </div>
+    <div id="bonus">
+      <h1>Бонусы</h1>
+      <h3>.</h3>
+    <a class="success" id="access-link" href="https://youtu.be/UxpmsbUJLl4" target="_blank" style="display: none;"></a>
+<div class="pin-container" id="pin-container">
+        <div class="input-group" id="input-group">
+            <input type="text" id="pin1" maxlength="1" inputmode="numeric" autocomplete="off">
+            <input type="text" id="pin2" maxlength="1" inputmode="numeric" autocomplete="off">
+            <input type="text" id="pin3" maxlength="1" inputmode="numeric" autocomplete="off">
+        </div>
+        <button class="submit" onclick="checkPin()">ПОДТВЕРДИТЬ</button>
+        <p id="message"></p>
+
     </section>
 
     <section id="eps">
-      <p class="title" style="border-top: 0.2vw solid rgba(245, 222, 179, 0.221);"><a href="#eps1">СЕРИИ</a></p>
+      <h1>Эпизоды</h1>
       <div class="episodemenu">
       <a href="#eps1" class="previous epbutton"></a>
     <div class="episodes">
@@ -88,19 +110,7 @@
     </div>
   </section>
 
-  <section id="bonus">
-    <p class="bonus title" style="border-top: 0.2vw solid rgba(245, 222, 179, 0.221);"><a href="#bonus">БОНУСЫ</a></p>
-    <div class="bonus yasin">
-    <a class="success" id="access-link" href="https://youtu.be/UxpmsbUJLl4" target="_blank" style="display: none;"></a>
-<div class="pin-container" id="pin-container">
-        <div class="input-group" id="input-group">
-            <input type="text" id="pin1" maxlength="1" inputmode="numeric" autocomplete="off">
-            <input type="text" id="pin2" maxlength="1" inputmode="numeric" autocomplete="off">
-            <input type="text" id="pin3" maxlength="1" inputmode="numeric" autocomplete="off">
-        </div>
-        <button class="submit" onclick="checkPin()">ПОДТВЕРДИТЬ</button>
-        <p id="message"></p>
-  </section>
+ 
   
   <section id="gallery">
     <p class="gallery title" style="border-top: 0.2vw solid rgba(245, 222, 179, 0.221);"><a href="#gallery">ГАЛЕРЕЯ</a></p>
@@ -114,8 +124,6 @@
     </div>
     </div>
   </section>
-
-  <section id="explanation"></section>
     
     <script src="script.js"></script>
   
