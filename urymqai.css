@@ -26,7 +26,7 @@
         backdrop-filter: blur(3px);
   }
   #eps{
-    padding-top:5vw;
+    padding-top: clamp(2.5rem,5vw,5rem);
     padding-right:2vw;
     padding-left:2vw;
     display:flex;
@@ -97,7 +97,24 @@
     .infobox{
       justify-self: center;
     }
-
+    .section2{
+      flex-direction: column;
+      justify-content: center;
+    }
+    #description{
+      justify-content: center;
+      justify-self:center;
+      width:100%;
+    }
+    #bonus{
+      width:100%;
+    }
+    .desctext{
+      text-align:justify;
+    }
+    #bonus h1{
+      font-size:2.5rem
+    }
   }
   .newepbutton{
     text-align: center;
@@ -140,7 +157,7 @@
   }
   .mainbutton:hover, .mainbutton:active{
     text-shadow: 0 0 1vw rgba(245, 222, 179, 0.5);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(245, 222, 179, 0.7);
   }
   .titlemainmenu{
     margin:0;
@@ -199,11 +216,22 @@
     .overlay{
       margin-left:clamp(1rem, 2vw, 3rem);
     }
+    .section2{
+          flex-direction: row-reverse;
+    }
+    #description{
+      justify-content: left;
+    justify-self: right;
+        width:60%;
+    }
+    #bonus{
+        width:40%;
+    }
   }
  
   h1{
     margin:0;
-    font-size:2.5vw;
+    font-size:clamp(1.25rem, 2.5vw, 2.5rem);
       color:white;
       font-weight: 700;
       text-align: left;
@@ -212,24 +240,22 @@
   .creatorbox{
     width:100%;
     display:flex;
-    gap:4vw;
+    gap:clamp(3.5rem,4vw,4rem);
     align-items: center;
-    border-top:2px solid rgba(255, 255, 255, 0.25);
-    padding-top: 1vw;
   }
   .infoname{
-    font-size:4vw;
+    font-size:clamp(3.5rem,4vw,4rem);
     color:rgb(220, 220, 220);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 0.5vw;
+    letter-spacing: clamp(0.25rem, 0.5vw, 0.5rem);
   }
   .info{
-    gap:1vw;
+    gap:clamp(0.5rem,1vw,1rem);
     display:flex;
     justify-content: left;
     justify-self: left;
     flex-direction: column;
-    font-size:1vw;
+    font-size:clamp(1rem,1.5vw,1.5rem);
     color:rgb(220, 220, 220);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
@@ -242,18 +268,20 @@
     display:flex;
     align-items: center;
     justify-self: left;
-    width:40%;
+  
     flex-direction: column;
-    gap:1vw;
+    gap:clamp(1.5rem,1.75vw,1.75rem);
   }
   h3{
-    width:50%;
-    border-top:2px solid rgba(255, 255, 255, 0.25);
-    color:transparent;
-
+    background-image:linear-gradient(90deg, rgba(245, 222, 179, 0.7),  rgba(245, 222, 179, 0.7), transparent);
+  padding-top:1px;
+  display:flex;
+  align-self:start;
+  width: 100%;
+  margin:0;
   }
   .desctext{
-    font-size:1vw;
+    font-size:clamp(1rem, 1.5vw, 1.5rem);
     color:rgb(255, 255, 255);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5;
@@ -261,8 +289,7 @@
   .section2{
     padding:2vw;
     display:flex;
-    gap: 2vw;
-    flex-direction: row-reverse;
+    gap: clamp(5rem,3vw,10rem);
   }
   #description h1{
     display:flex;
@@ -270,13 +297,11 @@
     width:100%;
   }
   #description{
-    gap:2vw;
+    gap:clamp(1.5rem, 2vw, 2rem);
     flex-direction: column;
     display:flex;
-    justify-content: left;
-    justify-self: right;
-    align-items: center;
-    width:60%;
+
+
   }
   .buttonmain{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -313,15 +338,16 @@
     flex-wrap: nowrap;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    margin-bottom:2vw;
-    gap:1vw;
+    margin-bottom:clamp(1.5rem,2vw,2rem);
+    gap:clamp(0.5rem,1vw,1rem);
+    overflow:hidden;
   }
   #eps1, #eps2{
     scroll-behavior: smooth;
     display:flex;
     flex-direction:row;
     flex-wrap: nowrap;
-    gap:1vw;
+    gap:clamp(0.5rem,1vw,1rem);
   }
   .epbutton{
     display: flex;
@@ -331,7 +357,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    padding-left: 2.125vw;
+    padding-left: clamp(2rem, 2.125vw, 3rem);
     padding-right: 2.125vw;
     text-align: center;
   }
@@ -362,8 +388,7 @@
   }
   section{
     background-color: black;
-    background-image: linear-gradient(90deg, rgba(41, 41, 41, 0.375), rgba(0, 0, 0), rgba(41, 41, 41  , 0.375));
-  }
+   }
   .cardep{
     width:17.5vw;
     background-repeat: no-repeat;
@@ -372,10 +397,9 @@
     color: white;
     display: inline-block;
     aspect-ratio: 16/9;
-    border-radius: 0.5vw; 
+    border-radius: 1vw; 
     background-position: center;
     transition: 0.2s;
-    opacity:75%;
   }
   .cardep1{
     background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/j19N12H/1ep.png);
@@ -403,16 +427,44 @@
   .cardep8{
     background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/6cyx3smH/8ep.jpg);
   }
+  .cardep:hover .playicon{
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 0.75vw rgba(0, 0, 0, 0.5);
+  }
   .cardep:hover{
-    opacity:100%
+    transform: scale(1.05);
   }
   .cardeptext{
     font-size:1.25vw;
     text-decoration: none;
-    bottom: -5vw;
-    left:1.5vw;
+    display:flex;
+    justify-self: left;
+    left:7.5%;
+    top:65%;
     position:relative;
-    transition:0.2s
+    text-shadow: 0 0 0.5vw black;
+    text-align: left;
+  }
+  .playicon{
+    position: relative;
+    display:flex;
+    justify-self: center;
+    top:15%;
+    font-size:3vw;
+    text-decoration: none;
+    transition:0.2s;
+    background-color: transparent;
+    border: 0.5px solid rgba(255, 255, 255, 0.6);
+    width:min-content;
+    padding-left:1.25vw;
+    padding-right:0.75vw;
+    padding-bottom: 0.5vw;
+    border-radius: 50%;
+  }
+  .playicon:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
   }
   body {
     margin:0;
@@ -484,40 +536,41 @@
 .input-group input {
   color:rgba(255, 255, 255, 0.7);
   background-color: transparent;
-    width: 4vw;
-    height: 5vw;
-    margin: 0 1vw;
+    width: clamp(3.5rem,4vw,5rem);
+    height: clamp(4.5rem,5vw,6rem);
+    margin: 0 clamp(0.5rem,1vw,1rem);
     text-align: center;
-    font-size: 3vw;
-    border: 0.2vw solid darkgrey;
+    font-size: clamp(2.5rem,3vw,3rem);
+    border:0.2vw solid darkgrey;
     border-radius: 25%;
     transition:0.2s
 }
 .input-group input:hover{
-  width:4.5vw;
-  height:5.5vw
+  width:clamp(4rem,4.5vw,5.5rem);
+  height:clamp(5rem,5.5vw,6.5rem)
 }
 .input-group input:focus {
     outline: none;
-    border-color: #007bff;
+    border-color: grey;
 }
 .submit {
     font-family: "Special Elite", syste,-ui;
-    margin-top: 2vh;
-    padding: 1vw 2vw;
-    font-size: 2vw;
+    margin-top: clamp(2.5rem, 2vh, 4rem);
+    padding: clamp(1.5rem,1vw,3rem) clamp(4.5rem,2vw,5rem);
+    font-size: clamp(1.5rem,2vw,2rem);
     cursor: pointer;
     transition:0.2s;
     background-color: transparent;
     color:rgb(206, 206, 206);
     border-right:transparent;
     border-left:transparent;
-    border-bottom:grey; border-top:grey ;
+    border-bottom:1px solid rgba(245, 222, 179, 0.5); border-top:1px solid rgba(245, 222, 179, 0.5);
     border-style: solid;
 }
 .submit:hover{
   padding-left: 3vw;
   padding-right: 3vw;
+  color:wheat;
 }
 h2{   font-family: "Special Elite", syste,-ui;
 color:wheat; font-size: 3vw; transition:0.2s;}
@@ -527,12 +580,21 @@ color:wheat; font-size: 3vw; transition:0.2s;}
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 5vw;
+  padding: clamp(4.5rem,5vw,5rem);
   transition: 0.2s;
   animation: slideIn 1s linear;
 }
-#access-link.success:hover{
-  padding:6vw;
+h4{
+  background-image:linear-gradient(90deg, transparent, rgba(245, 222, 179, 0.7), transparent);
+  padding-top:1px;
+  display:flex;
+  justify-self: center;
+  align-self:center;
+  width: 70%;
+  margin:0;
+}
+#access-link.success:hover, #access-link.success:active {
+  opacity:70%;
 }
 #pin-container.success{
   display: none;
