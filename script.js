@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const pin = document.getElementById('pin-container');
     const message = document.getElementById('message');
     const accessLink = document.getElementById('access-link');
-    const slider = document.getElementById('slide');
     const correctPin = "101";
 
     inputs.forEach((input, index) => {
@@ -50,3 +49,63 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 });
+
+
+const wrapper = document.querySelector('.episodes');
+    const nextEpBtn = document.querySelector('#nextEpBtn');
+    const prevEpBtn = document.querySelector('#prevEpBtn');
+    const blocks = document.querySelectorAll('.cardep');
+
+    let currentIndex = 0;
+    const totalBlocks = blocks.length;
+    const blockWidth = 400; // Matches CSS width
+
+    nextEpBtn.addEventListener('click', () => {
+        if (currentIndex < totalBlocks - 1) {
+            currentIndex++;
+        } else {
+            currentIndex = 0; // The Loop: Go back to start
+        }
+        updateSlider();
+    });
+
+    prevEpBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalBlocks - 1; // The Loop: Jump to end
+        }
+        updateSlider();
+    });
+
+    function updateSlider() {
+        // Shift the wrapper to the left based on the index
+        const offset = -currentIndex * blockWidth;
+        wrapper.style.transform = `translateX(${offset}px)`;
+    }
+
+    let touchStartX = 0;
+let touchEndX = 0;
+
+const episodeview = document.querySelector('.episodeview');
+
+episodeview.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+episodeview.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleGesture();
+}, { passive: true });
+
+function handleGesture() {
+    const swipeThreshold = 50; // Minimum distance to count as a swipe
+    
+    if (touchStartX - touchEndX > swipeThreshold) {
+        // Swiped Left -> Show Next
+        nextEpBtn.click();
+    } else if (touchEndX - touchStartX > swipeThreshold) {
+        // Swiped Right -> Show Previous
+        prevEpBtn.click();
+    }
+}
