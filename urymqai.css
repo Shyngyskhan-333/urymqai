@@ -334,7 +334,7 @@
   }
   .playbuttonmain:hover, .playbuttonmain:active{
     background-color: rgb(109, 94, 69);
-    color:hsl(0,0%,90%);
+    color:white;
    
   }
   
@@ -632,5 +632,6 @@ h4{
     from { opacity: 0; transform: translateY(2vw); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 
 
