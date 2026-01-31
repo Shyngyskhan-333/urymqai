@@ -32,6 +32,7 @@ h1{top:0;
   transition: 0.2s;
   letter-spacing: clamp(0.05rem, 0.1vw, 0.15rem);
   border-bottom: 1px solid transparent;
+  
   }
   
   .acc:hover, .acc:active {
@@ -52,7 +53,7 @@ h1{top:0;
   .desc{
     font-size: clamp(0.9rem, 1vw, 1.5rem);
     display: inline-block;
-    width:65%;
+    width:50%;
   }
 
   body{
@@ -108,7 +109,7 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0,0.5)), url(https://i.
 }
 
 .ep3{
-background-image: linear-gradient(90deg, rgba(0,0,0,0.6), rgba(0,0,0,0)), url(https://i.ibb.co.com/TMcGFGNf/ep3bg.png);
+background-image: linear-gradient(90deg, rgba(0,0,0,0.9),rgba(0,0,0,0.5), transparent), url(https://i.ibb.co.com/TMcGFGNf/ep3bg.png);
 }
 .ep4{
 background-image: linear-gradient(90deg, rgba(0,0,0,0.95), rgba(0,0,0,0.75)), url(https://i.ibb.co.com/KzGBy8gt/ep4bg.png);
@@ -123,7 +124,7 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0,0.9), rgba(0,0,0,0.3)
 background-image: linear-gradient(90deg, black, rgba(0,0,0,0.9), rgba(0,0,0,0.3)), url(https://i.ibb.co.com/JjFNY4sF/placeholder.png);
 }
 .ep8{
-background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), url(https://i.ibb.co.com/RkWQzCmQ/ep8bg.png);
+background-image: linear-gradient(90deg, black, rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(https://i.ibb.co.com/RkWQzCmQ/ep8bg.png);
 }
 .button{
   font-size:clamp(1.2rem, 1vw, 1.5rem);  
@@ -132,9 +133,10 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), u
   text-align: center;
   padding:min(1rem,4vw);
   font-weight: bold;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
   margin:min(2rem,2.5%);
   transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
 }
 @media screen and (max-width:768px){
   .music{
@@ -180,7 +182,7 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), u
       grid-template-columns: repeat(2,1fr);
     }
     .disc{
-      width:65%;
+      width:75%;
       display:flex;
       justify-self:center;
       text-align:center;
@@ -189,7 +191,6 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), u
       display:flex;
       justify-self:center;
       text-align:center;
-
     }
     h1{
       position: fixed;
@@ -206,7 +207,7 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), u
       justify-content: center;
     }
     .otherepisodestitle{
-      text-align:center
+      text-align:center;
     }
     .logobox{
       padding-top:20%;
@@ -231,7 +232,7 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), u
   }
 }
   .pb1{
-    background-color: rgb(206, 206, 206);
+    background-color: hsl(0,0%,90%);
     color: black;
   }
   .pb1:hover, .pb1:active, .cb1:hover, .cb1:active, .pb3:hover, .pb3:active, .cb3:hover, .cb3:active, .mb3:hover, .mb3:active,.pb4:hover, .pb4:active, .cb4:hover, .cb4:active, .mb4:hover, .mb4:active {
@@ -295,20 +296,41 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), u
     margin-left: 2vw;
   }
   .disc{
-    width:65%
+    width:65%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    padding-top:2rem;
+  }
+  .bg{
+    padding-bottom:2rem;
+  }
+  .incontent{
+    background-color:hsl(0,0%,2%);
+    border: 2px solid hsl(0,0%,25%);
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-image: linear-gradient(-45deg, hsla(0, 0%, 10%), transparent, hsla(0, 0%, 10%));
   }
   .disctext{
     font-size:clamp(0.5rem, 1vw, 1.5rem);
     font-weight: 200;
-    color: grey;
+    color: hsl(0,0%,90%);
+    border:1px solid hsl(0,0%,25%);
+    background-color: hsl(0,0%,6%);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
   }
   .otherepisodestitlebox{
     margin-top:2vw;
-  width:65%;
-  border-bottom: 1px solid #333;
+    width:65%;
+    border-bottom: 2px solid hsl(0,0%,25%);
   }
   .otherepisodestitle{
-    font-size:clamp(1rem, 1vw, 2.5rem);
+    font-size:clamp(2rem, 2.5vw, 2.5rem);
+    font-weight: 300;
     justify-self:center;
     display:flex;
     transition: 0.2s
@@ -328,7 +350,7 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), u
     width: 65%;
     margin-top:2%;
     display: grid; 
-    gap: clamp(0.25rem, 0.3rem, 1rem); 
+    gap: clamp(0.5rem, 1rem, 1rem); 
   }
   .cardep{
     background-repeat: no-repeat;
@@ -337,10 +359,12 @@ background-image: linear-gradient(90deg, black, rgba(0,0,0), rgba(0,0,0,0.6)), u
     color: white;
     display: flex;
     aspect-ratio: 16/9;
-    border-radius: 0.5rem; 
+    border-radius: 1rem; 
     background-position: center;
     transition: 0.2s;
-    opacity:75%
+    box-shadow: rgb(0, 0, 0) 0px 20px 30px -10px;
+    opacity:75%;
+    border:2px solid hsl(0,0%,25%);
   }
   .cardep1{
     background-image:linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.2), rgba(0,0,0,0.8)), url(https://i.ibb.co.com/j19N12H/1ep.png);
