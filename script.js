@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pin = document.getElementById('pin-container');
     const message = document.getElementById('message');
     const accessLink = document.getElementById('access-link');
+    const accessLink2 = document.getElementById('access-link2');
     const correctPin = "101";
 
     inputs.forEach((input, index) => {
@@ -25,8 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
         inputs.forEach(input => enteredPin += input.value);
 
         if (enteredPin === correctPin) {
-            accessLink.style.display = "inline-block"; 
+            accessLink.style.display = "inline-block";
+            accessLink2.style.display = "inline-block";
             accessLink.classList.add('success');
+            accessLink2.classList.add('success');
             pin.classList.add('success');
             slider.style.display = "inline-block";
             inputs.forEach(input => input.disabled = true);
@@ -46,6 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
             inputs[0].focus();
             accessLink.style.display = "none";
             accessLink.classList.remove('success');
+            accessLink2.style.display="none";
+            accessLink2.style.display="none";
         }
     };
 });

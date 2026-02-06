@@ -603,9 +603,9 @@
 }
 h2{   font-family: "Special Elite", syste,-ui;
 color:wheat; font-size: 3vw; transition:0.2s;}
-#access-link.success {
+
+#access-link.success, #access-link2.success{
   text-decoration: none;
-  background-image: url(https://i.ibb.co.com/JWK5fLkq/folder.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -622,7 +622,7 @@ h4{
   width: 70%;
   margin:0;
 }
-#access-link.success:hover, #access-link.success:active {
+#access-link.success:hover, #access-link.success:active, #access-link2.success:hover, #access-link2.success:active {
   opacity:70%;
 }
 #pin-container.success{
